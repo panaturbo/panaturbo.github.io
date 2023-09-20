@@ -675,7 +675,7 @@ form button:hover {
         transition: 0.2s ease;
     }
 
-    .navbar .links .show-menu {
+    .navbar .links.show-menu {
         left: 0;
         background: transparent;
     }
