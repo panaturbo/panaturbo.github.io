@@ -1,19 +1,91 @@
 <!DOCTYPE html>
-<html lang="zh-tw">
- <head>
-  <meta charset="UTF-8" />
-  <title>網站建置中</title>
-  <meta name="description" content="網站建置中" />
-  <style>html,body {margin: 0;padding: 50px 5%;width: 100%;min-height: calc(100vh - 100px);box-sizing: border-box;font-family: Arial, '微軟正黑體', sans-serif;display: flex;justify-content: center;align-items: center;}h1 {font-size: 3rem;color: #212121;margin: 0;padding-bottom: 15px;text-align: center;letter-spacing: 1px;}h3 {font-size: 1.6rem;color: #606060;font-weight: 400;margin: 0;line-height: 34px;text-align: center;letter-spacing: 1px;}.main {width: 90%;}.icon img{width: 100%;max-width: 500px;margin: 0 auto;display: block;}</style>
- </head>
- <body>
-  <div class="main">
-   <div class="icon">
-    <img src="construction.gif" />
-   </div>
-   <h1>網站建置中</h1>
-   <h1><a href="https://1drv.ms/v/s!AiVjTLqL1VI6gRkSGseOxFePDj-Y?e=rLJbk3" class="option">珠心算第一集</a></h1> 
-   <h3>Website Under Construction</h3>
-  </div>
- </body>
+<!-- Coding By HiBonBon - www.hibonbon.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiBonBon | HiBonBon</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">menu</span>
+            <a href="#" class="logo"><img src="images/logo.jpg" alt="logo"><h2>HiBonBon</h2></a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <li><a href="details/book">Book</a></li>
+                <li><a href="details/video">Video</a></li>
+                <li><a href="details/audioo">Audio</a></li>
+                <li><a href="details/software">Software</a></li>
+                <li><a href="details/images">Images</a></li>
+                <li><a href="details/donate">Donate</a></li>
+                <li><a href="details/about">About</a></li>
+            </ul>
+            <button class="login-btn">LOG IN</button>
+        </nav>
+    </header>
+
+    <div class="blur-bg-overlay">dddd</div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Welcome Back</h2>
+                <p>Please log in using your personal information to stay connected with us.</p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Forgot password?</a>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="#" id="signup-link">Signup</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create Account</h2>
+                <p>To become a part of our community, please sign up using your personal information.</p>
+            </div>
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Enter your email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Create password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#" class="option">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account? 
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
