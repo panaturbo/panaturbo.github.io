@@ -709,7 +709,7 @@ form button:hover {
 
 }
 
-@media (max-width: 760px) {
+@media (max-width: 740px) {
     .form-popup {
         width: 95%;
     }
